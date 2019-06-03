@@ -10,6 +10,7 @@ body {
 }
 
 @media (min-width: 320px) {  
+/* LOGIN SECTION */
   #login-container {
     width: 100%;
     display: flex;
@@ -68,18 +69,414 @@ body {
 
   header {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
+    flex-direction: row;
     background: #FF2F22;
-    padding: 20px;
+    justify-content: space-between;
+    padding: 1%;
   }
 
+/* REGISTER SECTION*/
+  .header-register {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-register a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .form-register {
+    padding: 5% 5%;
+  }
+
+  .btn-register {
+      width: 30%;
+  }
+
+  .back-register {
+    text-decoration: none;
+    text-align: center;
+    width: 25%;
+    font-size: 80%;
+  }
+
+/* HEADER FEED SECTION */
+  .header-welcome-text, .header-logo, .header-exit-btn {
+    display: flex;
+    align-items: center;
+    width: 33.33%;
+  }
+
+  .header-welcome-text {
+    justify-content: flex-start;
+  }
+
+  .header-logo {
+    justify-content: center;
+  }
+
+  .logo-img {
+    width: 80%;
+    height: 60%;
+  }
+
+  .header-exit-btn {
+    justify-content: flex-end;
+  }
+
+  .text-header {
+    color: white;
+    font-weight: bold;
+  }
+
+  .btn-signout {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* FEED SECTION */
+  .feed-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .user-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    /* height: 50%; */
+    padding-top: 2%;
+    margin: 0 auto;
+  }
+
+  .wall-feed {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .info-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: white;
+    border:solid #FF2F22;
+    border-radius: 7px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .user-name-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+
+  .div-img{
+    display: flex;
+    align-content: space-between;
+  }
+  .img-user {
+    width: 50px;
+  }
+
+  .circular-landscape {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .circular-landscape img {
+    width: auto;
+    height: 100%;
+    margin-left: -25px;
+  }
+
+  /* .feed-comment {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1%;
+    border: none;
+    border:solid 1px #ccc;
+    border-radius: 3px;
+    margin: 7%;
+  } */
+
+  .form-post{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin-top: 2%;
+    border-radius: 7px;
+    border:solid #FF2F22;
+    padding: 2%;
+  }
+
+  .input-comment {
+    height: 80px;
+    border-radius: 7px;
+    border: none;
+    border:solid 1px #ccc;
+    margin-bottom: 1%;
+    width: 100%;
+  }
+
+  input::placeholder {
+    font-weight: bolder;
+    font-size: 14px;
+  }
+
+  .btn-compartir {
+    border: none;
+    border-radius: 13px;
+  }
+
+  .privacy {
+    align-self: flex-end;
+    background-color: #FF2F22;
+    color: white;
+    font-weight: bold;
+    margin-right: 3%;
+    margin-left: 3%;
+    padding: 3.2%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .privacy:hover {
+      background-color: white;
+      color: #FF2F22;
+  }
+
+  .font-weight-privacy {
+      font-weight: bold;
+  }
+
+  select option[disabled]:first-child { 
+    display: none;
+  }
+
+/* POST CONTAINER SECTION */
+  .post-container{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  article {
+    width: 94%;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 9px;
+    border-radius: 10px;
+    border:solid #ccc;
+  }
+
+  .post-user-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 1px #ccc;
+  }
+
+  .post-user-info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2%;
+    width: 50%;
+  }
+
+  .post-user-info-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .post-user-info-right img {
+    align-self: flex-end;
+    padding: 2%;
+  }
+
+  .post-user-message {
+    border: solid 1px #ccc;
+    padding: 2%;
+  }
+
+  .post-icons {
+    display: flex;
+    flex-flow: row nowrap;
+    border: solid 1px #ccc;
+    padding: 2%;
+  }
+
+  .post-icons-img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+
+  .post-icons-btn-save {
+    display: flex;
+    flex-direction: row;
+    padding-right: 2%;
+  }
+
+  .comment-icon, .like-icon, .upload-icon, .edit-icon {
+    cursor: pointer;
+    padding-left: 5%;
+  }
+
+  .btn-delete {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+  }
+
+  .btn-save {
+    border: none;
+    border-radius: 13px;
+    width: 100%;
+  }
+
+  textarea {
+    resize: none;
+    background-color: transparent;
+    border: none;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+  }
+
+  h1 {
+    padding: 1.5px;
+  }
+
+  .error-alert {
+    font-weight: bolder;
+    color: #FF2F22;
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+  .font-weight-bold {
+    font-weight: bold;
+  }
+
+  .btn-comment {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+  }
+
+  .btn-comment-right {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  select {
+    width: fit-content
+  }
+  
+  .nombre{
+    background: #B3EBE6
+  }
+
+}
+
+@media (min-width: 992px) {
+/* LOGIN SECTION */
+  #login-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+  }
+
+  .login-image {
+    width: 50%;
+    padding-left: 5%;
+  }
+
+  .column-login {
+    width: 50%;
+    padding-right: 5%;
+  }
+
+  .b-size {
+    width: 100%;
+  }
+
+/* REGISTER SECTION */
+.form-register {
+  padding: 2% 2%;
+}
+
+.back-register {
+  text-decoration: none;
+  text-align: center;
+  width: 20%;
+  font-size: 100%;
+}
+
+.btn-register {
+  font-size: 100%;
+}
+
+/* HEADER SECTION */
+  .logo-img {
+    width: 100%;
+    width: 200px;
+    height:50px;
+  }
+
+  .text-header {
+    color: white;
+    font-weight: bold;
+    font-size: 100%;
+  }
+
+  .btn-signout {
+    margin-top: 1%;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 100%;
+  }
+
+/* FEED SECTION */
   .feed-container {
     display: flex;
     flex-flow: row nowrap;
     width: 90%;
-    margin: 0 
+    margin: 0 auto;
   }
 
   .circular-landscape {
@@ -130,20 +527,6 @@ body {
     align-self: flex-end;   
   }
 
-  .logo-img {
-    width: 100%;
-    width: 200px;
-    height:50px;
-  }
-
-  .logo-container {
-    margin-bottom: 20px;
-  }
-
-  .register-container {
-    margin-top: 15px;
-  }
-
   .error-alert {
     font-weight: bolder;
     color: #FF2F22;
@@ -151,36 +534,16 @@ body {
     margin-bottom: 1%;
   }
 
-  .back-register {
-    text-decoration: none;
-    text-align: center;
-    width: 20%;
-    font-size: 14px;
-  }
-
-  .text-header {
-    color: white;
-    font-weight: bold;
-  }
-
-  .btn-signout {
-    margin-top: 1%;
-    text-decoration: none;
-    background-color: transparent;
-    cursor: pointer;
-  }
-
   .user-container {
     display: flex;
     justify-content: flex-start;
     width: 100%;
     height: 50%;
-    margin: 20px auto;
-
   }
 
   .info-user {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     background: white;
     border:solid #FF2F22;
@@ -191,13 +554,19 @@ body {
     flex-direction: column;
   } 
 
+  .user-name-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+
   .div-img{
     display: flex;
     align-content: space-between;
-    /* width: 30% */
   }
+
   .img-user {
-    /* border-radius: 50%; */
     width: 50px;
   }
 
@@ -208,7 +577,7 @@ body {
   .wall-feed {
       display: flex;
       flex-flow: column nowrap;
-      width: 50%;
+      width: 100%;
       margin: 0 auto;
     }
 
@@ -216,7 +585,6 @@ body {
     width: 100%;
     margin: 0 auto;
     margin-top: 2%;
-    /* margin-right: 10%; */
     display: flex;
     flex-direction: column;
     padding: 9px;
@@ -224,14 +592,12 @@ body {
     border:solid #FF2F22;
   }
 
-  /* .x-erase {
-      display: flex;
-      flex-direction: row-reverse;
-  } */
-
-  /* .btn-erase {
-      cursor: pointer;
-  } */
+  .post-container{
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    width: 100%;
+  }
 
   .input-comment {
       width: 90%;
@@ -284,15 +650,9 @@ body {
     display: none;
   }
 
-
   .btn-compartir {
-      /* margin: 0 auto;
-      margin-bottom: 2%; */
       border: none;
-      /* border:solid 1px #ccc; */
       border-radius: 13px;
-      /* width: 100%; */
-      /* padding: 2%; */
   }
 
   .margin-left {
@@ -301,15 +661,6 @@ body {
 
   select {
     width: fit-content
-  }
-  
-  .nombre{
-    background: #B3EBE6
-  }
-  
-  .post-container{
-    display: flex;
-    flex-flow: column;
   }
 
   .post {
@@ -328,8 +679,7 @@ body {
       flex-direction: row;
       justify-content: space-between;
       border: solid 1px #ccc;
-      /* padding: 2%; */
-      /* width: 100%; */
+      width: 100%;
   }
 
   .post-user-info-left {
@@ -345,9 +695,7 @@ body {
       display: flex;
       flex-direction: column;
       padding: 2%;
-      width: 3%
-      /* justify-content: flex-end; */
-      /* align-content: flex-start; */
+      width: 3%;
   }
 
   .post-user-message {
@@ -387,13 +735,9 @@ body {
   }
 
   .btn-save {
-      /* margin: 0 auto; */
-      /* margin-bottom: 2%; */
       border: none;
-      /* border:solid 1px #ccc; */
       border-radius: 13px;
       width: 100%;
-      /* padding: 5% 20% 5% 20%; */
   }
 
   textarea {
@@ -402,6 +746,6 @@ body {
     border: none;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
+    width: 100%;
  }
-
 }
