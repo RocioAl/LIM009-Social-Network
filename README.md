@@ -110,7 +110,7 @@ El objetivo de usar Firebase, en este proyecto, es que aprendes a manejar y pers
 
 * Al final debo poder ingresar a la red social y poder visualizar los datos de mi perfil creado o editarlos.
 
-
+![2](https://user-images.githubusercontent.com/47761211/63555844-20ab0580-c508-11e9-937f-f0a9baf5f464.png)
 ***
 
 ## Recursos
